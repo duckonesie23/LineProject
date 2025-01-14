@@ -38,7 +38,12 @@ public class Point{
                 return false;
             }
         }else{
-            throw new IllegalArgumentException("undefined slope");
+            if(x == p1.getX() && p1.getX() == p2.getX()){
+                return true;
+            }else{
+                return false;
+            }
+            
         }
     }
 }

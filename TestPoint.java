@@ -11,5 +11,9 @@ public class TestPoint{
         System.out.println("\tp3 to p4: "+ p3.manhattanDistance(p4));
 
         System.out.println("Testing isCollinear: ");
+        System.out.println("p2, p4, p5: "+p2.isCollinear(p4, p5));
+        System.out.println("p2, p3, p4: "+p2.isCollinear(p3, p4));
+        System.out.println("p1, p2, p6: "+p1.isCollinear(p2, p6));
+        System.out.println("p1, p2, p3: "+p1.isCollinear(p2, p3));
     }
 }
