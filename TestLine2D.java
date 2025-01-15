@@ -16,6 +16,17 @@ public class TestLine2D {
         System.out.println("\tLine 3: "+ line3);
 
         System.out.println("Testing getP1 and getP2 methods: ");
-            System.out,println("Line1, getP1: x="+line1.getP1()+", y="+p1.get);
+        System.out.println("Line1, getP1: x="+line1.getP1().getX()+", y="+line1.getP1().getX());
+        System.out.println("Line1, getP2: x="+line1.getP2().getX()+", y="+line1.getP2().getY());
+        System.out.println("Line2, getP1: x="+line2.getP1().getX()+", y="+line2.getP1().getY());
+        System.out.println("Line2, getP2: x="+line2.getP2().getX()+", y="+line2.getP2().getY());
+        
+        System.out.println("Testing getSlope:");
+        System.out.println("\tLine 1 slope: "+ line1.getSlope());
+        System.out.println("\tLine 2 slope: "+line2.getSlope());
+
+        System.out.println("Testing isCollinear");
+        System.out.println("\tLine1 and p3: "+line1.isCollinear(p3));
+        System.out.println("\tLine1 and p4: "+line1.isCollinear(p4));
     }
 }

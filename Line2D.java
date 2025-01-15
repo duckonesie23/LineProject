@@ -21,12 +21,12 @@ public class Line2D {
 
     public double getSlope(){
         if(P2.getX()-P1.getX()!=0)
-            return (P2.getY()-P1.getY())/(P2.getX()-P1.getX());
+            return ((double)P2.getY()-P1.getY())/((double)P2.getX()-P1.getX());
         else
             throw new IllegalArgumentException("undefined slope");
     }
     public boolean isCollinear(Point p){
-        double bc = (P2.getY()-p.getY())/(P2.getX()-p.getX());
+        double bc = ((double)P2.getY()-p.getY())/((double)P2.getX()-p.getX());
         if(Math.abs(getSlope()-bc)<0.01){
             return true;
         }else{
